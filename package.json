@@ -16,7 +16,9 @@
   },
   "scripts": {
     "test": "lab -m 5000 -t 100 -v -L",
-    "test-cov-html": "lab -m 5000 -r html -o coverage.html -L"
+    "test-cov-html": "lab -m 5000 -r html -o coverage.html -L",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -27,6 +29,8 @@
   "dependencies": {
     "blessed": "^0.1.56",
     "blessed-contrib": "^2.0.5",
-    "lodash": "^3.8.0"
-  }
+    "lodash": "^3.8.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
