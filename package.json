@@ -27,6 +27,6 @@
   "dependencies": {
     "blessed": "^0.1.56",
     "blessed-contrib": "^2.0.5",
-    "lodash": "^3.8.0"
+    "lodash": "^4.17.17"
   }
 }
